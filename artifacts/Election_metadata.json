@@ -1,0 +1,207 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "_candidateId",
+						"type": "uint256"
+					}
+				],
+				"name": "votedEvent",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "addCandidate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "candidates",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voteCount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "candidatesCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_candidateId",
+						"type": "uint256"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "voters",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Election.sol": "Election"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Election.sol": {
+			"keccak256": "0xffb1f6d3373c8686f45fc6a3e924f6ac6136d4b6310f7cefab80bad392800bc2",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1391ff4a70fc1fa59a3f86fb6541eec1a36aa39a8d723d2d5e05ad8bd656dda4",
+				"dweb:/ipfs/QmfHDT7cFD2YZCFNWK5WjASTTZHhGrGe7w5N58mozwd4LB"
+			]
+		},
+		"Ownable.sol": {
+			"keccak256": "0x3c4a245c02e32bc337b48eea98223e36db5bb9e00762c500e56ce879fdc71b5e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://cfb4f097d7e79bd0eecc0fc8b84d39634c086f44145a383ea94038e7813357a5",
+				"dweb:/ipfs/QmWA8PpgeA5PYAA1tfXB48ciKR6nvJ1F2GtxmDXFpqq7zY"
+			]
+		},
+		"SafeMath.sol": {
+			"keccak256": "0x16670e872d3f8ba3a32dd6d4b19f31da5c078beaff451486d3a9550a2035a1bb",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ad8cc19908d80901ae77a024bd8f87751c7ee7810d657cdd9298de38a709766c",
+				"dweb:/ipfs/QmVRVXNMjWMZESb5gEWkDhR9ToVs7rfAA3QR1k3rAV3TKd"
+			]
+		}
+	},
+	"version": 1
+}
